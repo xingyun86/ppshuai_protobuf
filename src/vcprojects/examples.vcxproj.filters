@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include=".\protobuf\cmake\CMakeLists.txt" />
+    <CustomBuild Include=".\protobuf\CMakeFiles\4c6ba56586c9ab60e188f3924df57f6a\examples-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include=".\protobuf\CMakeFiles\4c6ba56586c9ab60e188f3924df57f6a\examples-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include=".\protobuf\CMakeFiles\4c6ba56586c9ab60e188f3924df57f6a\examples-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include=".\protobuf\CMakeFiles\4c6ba56586c9ab60e188f3924df57f6a\examples-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include=".\protobuf\CMakeFiles\4c6ba56586c9ab60e188f3924df57f6a\examples-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include=".\protobuf\CMakeFiles\4c6ba56586c9ab60e188f3924df57f6a\examples-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include=".\protobuf\CMakeFiles\4c6ba56586c9ab60e188f3924df57f6a\examples-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include=".\protobuf\CMakeFiles\e6488397cdf376e9db9378a8e684afae\examples-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include=".\protobuf\CMakeFiles\8d86907b88f2a02a086d614fd51d3daa\examples.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\protobuf\CMakeFiles\examples" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2EF4E439-C00A-3189-AA50-312F6668FBD7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

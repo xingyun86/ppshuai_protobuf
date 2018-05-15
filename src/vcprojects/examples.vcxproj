@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{69E03912-72B6-351F-9DC8-0C021DF205B6}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>examples</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\zlib-1.2.11-static\include;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\src;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock\gtest;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock\gtest\include;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\zlib-1.2.11-static\include;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\src;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock\gtest;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock\gtest\include;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\zlib-1.2.11-static\include;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\src;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock\gtest;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock\gtest\include;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\zlib-1.2.11-static\include;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\src;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock\gtest;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock\gtest\include;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\protobuf\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/protobuf/cmake -BD:/DevelopmentEnvironment/Workspaces/Sources/protobuf --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/cmake/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeCXXCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeDependentOption.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-options.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindZLIB.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\SelectLibraryConfigurations.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\extract_includes.bat.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\libprotobuf-lite.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\libprotobuf.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\libprotoc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protoc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\tests.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\install.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf.pc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-lite.pc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-config.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-config-version.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-module.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-options.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\examples.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\ExternalProject.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\tmp\examples-cfgcmd.txt.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/protobuf/cmake -BD:/DevelopmentEnvironment/Workspaces/Sources/protobuf --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/cmake/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeCXXCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeDependentOption.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-options.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindZLIB.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\SelectLibraryConfigurations.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\extract_includes.bat.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\libprotobuf-lite.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\libprotobuf.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\libprotoc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protoc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\tests.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\install.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf.pc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-lite.pc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-config.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-config-version.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-module.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-options.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\examples.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\ExternalProject.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\tmp\examples-cfgcmd.txt.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/protobuf/cmake -BD:/DevelopmentEnvironment/Workspaces/Sources/protobuf --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/cmake/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeCXXCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeDependentOption.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-options.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindZLIB.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\SelectLibraryConfigurations.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\extract_includes.bat.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\libprotobuf-lite.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\libprotobuf.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\libprotoc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protoc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\tests.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\install.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf.pc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-lite.pc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-config.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-config-version.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-module.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-options.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\examples.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\ExternalProject.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\tmp\examples-cfgcmd.txt.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/Workspaces/Sources/protobuf/cmake -BD:/DevelopmentEnvironment/Workspaces/Sources/protobuf --check-stamp-file D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/cmake/CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\CMakeLists.txt;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeCXXCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeDependentOption.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-options.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindZLIB.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\SelectLibraryConfigurations.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\extract_includes.bat.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\libprotobuf-lite.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\libprotobuf.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\libprotoc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protoc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\tests.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\install.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf.pc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-lite.pc.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-config.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-config-version.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-module.cmake.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\protobuf-options.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\examples.cmake;D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\ExternalProject.cmake;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\tmp\examples-cfgcmd.txt.in;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\protobuf\CMakeFiles\4c6ba56586c9ab60e188f3924df57f6a\examples-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Creating directories for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/tmp
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/src
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Creating directories for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/tmp
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/src
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Creating directories for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/tmp
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/src
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Creating directories for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/tmp
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/src
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\protobuf\CMakeFiles\4c6ba56586c9ab60e188f3924df57f6a\examples-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No download step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-download.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No download step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-download.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No download step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-download.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No download step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-download.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\protobuf\CMakeFiles\4c6ba56586c9ab60e188f3924df57f6a\examples-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No update step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-update.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No update step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-update.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No update step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-update.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No update step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-update.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\protobuf\CMakeFiles\4c6ba56586c9ab60e188f3924df57f6a\examples-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No patch step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-patch.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No patch step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-patch.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No patch step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-patch.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No patch step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-patch.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\protobuf\CMakeFiles\4c6ba56586c9ab60e188f3924df57f6a\examples-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing configure step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/examples-configure-Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-configure.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\tmp\examples-cfgcmd.txt;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-update;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing configure step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/examples-configure-Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-configure.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\tmp\examples-cfgcmd.txt;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-update;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing configure step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/examples-configure-MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-configure.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\tmp\examples-cfgcmd.txt;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-update;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing configure step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/examples-configure-RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-configure.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\tmp\examples-cfgcmd.txt;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-update;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\protobuf\CMakeFiles\4c6ba56586c9ab60e188f3924df57f6a\examples-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing build step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-build.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing build step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-build.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing build step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe --build . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-build.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing build step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe --build . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-build.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\protobuf\CMakeFiles\4c6ba56586c9ab60e188f3924df57f6a\examples-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No install step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-install.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No install step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-install.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No install step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-install.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No install step for 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/4c6ba56586c9ab60e188f3924df57f6a/examples-install.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\protobuf\CMakeFiles\e6488397cdf376e9db9378a8e684afae\examples-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Completed 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/$(Configuration)/examples-complete
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/e6488397cdf376e9db9378a8e684afae/examples-complete.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-install;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-mkdir;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-update;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-patch;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-configure;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-build;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\$(Configuration)\examples-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Completed 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/$(Configuration)/examples-complete
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/e6488397cdf376e9db9378a8e684afae/examples-complete.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-install;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-mkdir;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-update;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-patch;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-configure;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-build;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\$(Configuration)\examples-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Completed 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/$(Configuration)/examples-complete
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/e6488397cdf376e9db9378a8e684afae/examples-complete.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-install;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-mkdir;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-update;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-patch;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-configure;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-build;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\$(Configuration)\examples-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Completed 'examples'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E make_directory D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/$(Configuration)/examples-complete
+if %errorlevel% neq 0 goto :cmEnd
+D:\DevelopmentEnvironment\Softwares\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -E touch D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/examples/logs/$(Configuration)/examples-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/e6488397cdf376e9db9378a8e684afae/examples-complete.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-install;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-mkdir;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-download;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-update;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-patch;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-configure;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-build;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\examples\logs\$(Configuration)\examples-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\$(Configuration)\examples-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include=".\protobuf\CMakeFiles\8d86907b88f2a02a086d614fd51d3daa\examples.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/8d86907b88f2a02a086d614fd51d3daa/examples.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\$(Configuration)\examples-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\examples</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/8d86907b88f2a02a086d614fd51d3daa/examples.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\$(Configuration)\examples-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\examples</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/8d86907b88f2a02a086d614fd51d3daa/examples.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\$(Configuration)\examples-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\examples</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/DevelopmentEnvironment/Workspaces/Sources/protobuf/CMakeFiles/8d86907b88f2a02a086d614fd51d3daa/examples.rule;D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\$(Configuration)\examples-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\DevelopmentEnvironment\Workspaces\Sources\protobuf\CMakeFiles\examples</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\protobuf\CMakeFiles\examples" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include=".\libprotobuf.vcxproj">
+      <Project>99A47600-722C-3145-8323-7423A1744588</Project>
+      <Name>libprotobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include=".\protoc.vcxproj">
+      <Project>BEA4E6DD-74F0-3213-ACA6-2927DE2E7C56</Project>
+      <Name>protoc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
